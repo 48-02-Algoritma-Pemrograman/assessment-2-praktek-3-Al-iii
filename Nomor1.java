@@ -1,30 +1,37 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Nomor1 {
-    static String nPrint(int n) {
-        if (n == 0) {
-            return String.valueOf(n);
-        } else if (n % 3 == 0 && n % 5 == 0) {
-            return "FizzBuzz";
-        } else if (n % 3 == 0) {
-            return "Fizz";
-        } else if (n % 5 == 0) {
-            return "Buzz";
-        } 
-        return String.valueOf(n);
+    static ArrayList<String> nPrint(int n) {
+        ArrayList<String> outPut = new ArrayList<>();
+        for (int i = 0; i <= n; i++) {
+            if (i == 0) {
+                outPut.add(String.valueOf(i));
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                outPut.add("FizzBuzz");
+            } else if (i % 3 == 0) {
+                outPut.add("Fizz");
+            } else if (i % 5 == 0) {
+                outPut.add("Buzz");
+            } else {
+                outPut.add(String.valueOf(i));
+            }
+        }
+        return outPut;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
         /* Pekerjaan anda mulai dari sini */
-        for (int i =0;i<=N;i++){
-            System.out.print(nPrint(i)+" ");
+        ArrayList <String> outPut = nPrint(N);
+        for (int i=0;i<=N;i++){
+            System.out.print(outPut.get(i)+" ");
         }
-        input.close();
         System.out.println("");
         /* Pekerjaan anda berakhir sini */
 
-        System.out.println(Nomor1.class.getDeclaredMethods().length); 
+        System.out.println(Nomor1.class.getDeclaredMethods().length);
     }
-    
+
 }
