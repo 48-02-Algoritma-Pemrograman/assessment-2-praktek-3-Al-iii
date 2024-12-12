@@ -27,7 +27,7 @@ public class Nomor1 {
         ArrayList <String> outPut = nPrint(N);
         for (int i=0;i<=N;i++){
             if (i==N) {
-                System.out.println(outPut.get(i)+" ");
+                System.out.println(outPut.get(i));
             } else {
             System.out.print(outPut.get(i)+" ");
             }
