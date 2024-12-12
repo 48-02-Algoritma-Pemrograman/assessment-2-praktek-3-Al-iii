@@ -17,6 +17,7 @@ static String nPrint(int n) {
         for (int i =0;i<=N;i++){
             System.out.print(nPrint(i)+" ");
         }
+        System.out.println("");
         input.close();
         /* Pekerjaan anda berakhir sini */
 
