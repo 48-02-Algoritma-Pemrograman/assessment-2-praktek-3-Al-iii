@@ -7,7 +7,7 @@ static String nPrint(int n) {
             return "Fizz";
         } else if (n % 5 == 0) {
             return "Buzz";
-        } 
+        }
         return String.valueOf(n);
     }
     public static void main(String[] args){
