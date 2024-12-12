@@ -1,4 +1,7 @@
-static String nPrint(int n) {
+import java.util.Scanner;
+
+public class Nomor1 {
+    static String nPrint(int n) {
         if (n == 0) {
             return String.valueOf(n);
         } else if (n % 3 == 0 && n % 5 == 0) {
@@ -7,7 +10,7 @@ static String nPrint(int n) {
             return "Fizz";
         } else if (n % 5 == 0) {
             return "Buzz";
-        }
+        } 
         return String.valueOf(n);
     }
     public static void main(String[] args){
@@ -17,8 +20,8 @@ static String nPrint(int n) {
         for (int i =0;i<=N;i++){
             System.out.print(nPrint(i)+" ");
         }
-        System.out.println("");
         input.close();
+        System.out.println("");
         /* Pekerjaan anda berakhir sini */
 
         System.out.println(Nomor1.class.getDeclaredMethods().length); 
